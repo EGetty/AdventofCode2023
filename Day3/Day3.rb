@@ -10,6 +10,7 @@ File.foreach("input.txt") do |line|
 end
 
 total = 0
+ratios = 0
 i = 0 # Use to know which line we're currently in
 # Go through each element in schematic and check to see if it's adjacent to a symbol
 schematic.each do |line|
@@ -42,4 +43,5 @@ schematic.each do |line|
   i+=1
 end
 
-puts total
+puts "Sum of all part numbers: #{total}"
+puts "Sum of all gear ratios: #{ratios}"
